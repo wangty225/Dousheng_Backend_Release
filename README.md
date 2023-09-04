@@ -214,15 +214,15 @@ server {
     listen 22441;
     
     location /nginx_status/ {
-    	stub_status on;
-	access_log off;
-	allow 127.0.0.1;
-	deny all;
+        stub_status on;
+        access_log off;
+        allow 127.0.0.1;
+        deny all;
     }
 
     location /oss-dousheng/ {
-	    rewrite ^/oss-dousheng(/.*)$ $1 break;
-	    proxy_pass https://oss-dousheng.oss-cn-beijing-internal.aliyuncs.com;
+        rewrite ^/oss-dousheng(/.*)$ $1 break;
+        proxy_pass https://oss-dousheng.oss-cn-beijing-internal.aliyuncs.com;
         
         proxy_redirect off;
         proxy_set_header Host oss-dousheng.oss-cn-beijing-internal.aliyuncs.com; 
