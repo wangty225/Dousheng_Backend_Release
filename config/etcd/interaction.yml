@@ -1,0 +1,8 @@
+server:
+  name: "Dousheng_Backend_InteractionServer"
+  host: 192.168.2.13
+  port: 22113
+
+etcd:
+  host: ip
+  port: 2379

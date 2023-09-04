@@ -1,0 +1,8 @@
+server:
+  name: "Dousheng_Backend_VideoServer"
+  host: 192.168.2.12
+  port: 22112
+
+etcd:
+  host: ip
+  port: 2379

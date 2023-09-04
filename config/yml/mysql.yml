@@ -1,0 +1,7 @@
+mysql:
+  host: your_ip
+  port: 3306
+  config: charset=utf8mb4&&parseTime=True
+  dbname: dousheng_db
+  username: root
+  password: your_password

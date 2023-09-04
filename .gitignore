@@ -34,11 +34,10 @@ _testmain.go
 /output
 *.local.yml
 dumped_hertz_remote_config.json
-/dist/router
-/dist/server
+# /dist/router
+# /dist/server
 
-
-/config/
+# /config/
 
 /testcode.go
 /aa.go

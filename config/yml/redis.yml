@@ -1,0 +1,5 @@
+redis:
+  db: 0
+  host: your_ip
+  port: 6379
+  password: your_passwoord

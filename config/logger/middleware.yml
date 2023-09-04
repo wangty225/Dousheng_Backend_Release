@@ -1,0 +1,2 @@
+info: logs/middleware/info.log
+error: logs/middleware/error.log

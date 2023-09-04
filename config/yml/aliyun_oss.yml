@@ -1,0 +1,5 @@
+aliyun_oss:
+  Endpoint: oss-cn-beijing-internal.aliyuncs.com
+  AccessKeyID:  your_AccessKeyID
+  AccessKeySecret: your_AccessKeySecret
+  BucketName: your_BucketName

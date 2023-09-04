@@ -1,0 +1,8 @@
+server:
+  name: "Dousheng_Backend_UserServer"
+  host: 192.168.2.11
+  port: 22111
+
+etcd:
+  host: your_ip
+  port: 2379

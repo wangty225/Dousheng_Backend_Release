@@ -1,0 +1,3 @@
+etcd:
+  host: ip
+  port: 2379
