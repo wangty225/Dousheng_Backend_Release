@@ -1,0 +1,55 @@
+version: '3'
+services:
+  dousheng_user-server:
+    build:
+      context: ../
+      dockerfile: dockerfiles/user/Dockerfile
+    image: dousheng_user-server:v0.1
+    container_name: dousheng_user-server
+    restart: unless-stopped
+    networks:
+      dousheng_net:
+        ipv4_address: 192.168.2.11
+    ports:
+      - "22111:22111"
+  dousheng_video-server:
+    build:
+      context: ../
+      dockerfile: dockerfiles/video/Dockerfile
+    image: dousheng_video-server:v0.1
+    container_name: dousheng_video-server
+    restart: unless-stopped
+    networks:
+      dousheng_net:
+        ipv4_address: 192.168.2.12
+    ports:
+      - "22112:22112"
+  dousheng_interaction-server:
+    build:
+      context: ../
+      dockerfile: dockerfiles/interaction/Dockerfile
+    image: dousheng_interaction-server:v0.1
+    container_name: dousheng_interaction-server
+    restart: unless-stopped
+    networks:
+      dousheng_net:
+        ipv4_address: 192.168.2.13
+    ports:
+      - "22113:22113"
+
+  dousheng_router:
+    build:
+      context: ../
+      dockerfile: dockerfiles/router/Dockerfile
+    image: dousheng_router:v0.1
+    container_name: dousheng_router
+    restart: unless-stopped
+    networks:
+      dousheng_net:
+        ipv4_address: 192.168.2.10
+    ports:
+      - "8888:8888"
+
+networks:
+  dousheng_net:
+    external: true

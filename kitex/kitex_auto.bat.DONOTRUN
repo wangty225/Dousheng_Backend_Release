@@ -1,0 +1,32 @@
+cd internal
+cd microservice
+
+@REM 分别在user video interaction relation message文件夹下创建go.mod, 并输入module xxx (user video interaction relation message)\n\ngo 1.20
+pause
+
+cd user
+touch go.mod
+@REM kitex -module github.com/wangty/Dousheng_Backend -I ../../../kitex/idl/thriftgo/ -v -service douyin.core.microservice.user          -gen-path ./kitex-gen/         -record  user.thrift
+kitex -module Dousheng_Backend  -I ../../../kitex/idl/thriftgo/ -v -service douyin.core.microservice.user          -gen-path ./kitex-gen/         -record  user.thrift
+go mod tidy
+
+cd video
+touch go.mod
+kitex -module Dousheng_Backend -I ../../../kitex/idl/thriftgo/ -v -service douyin.core.microservice.video         -gen-path ./kitex-gen/        -record  video.thrift
+go mod tidy
+
+cd interaction
+touch go.mod
+kitex -module Dousheng_Backend -I ../../../kitex/idl/thriftgo/ -v -service douyin.core.microservice.interaction   -gen-path ./kitex-gen/  -record  interaction.thrift
+go mod tidy
+
+cd relation
+touch go.mod
+kitex -module Dousheng_Backend -I ../../../kitex/idl/thriftgo/ -v -service douyin.core.microservice.relation      -gen-path ./kitex-gen/     -record  relation.thrift
+go mod tidy
+
+
+cd message
+touch go.mod
+kitex -module Dousheng_Backend -I ../../../kitex/idl/thriftgo/ -v -service douyin.core.microservice.message       -gen-path ./kitex-gen/      -record  message.thrift
+go mod tidy
