@@ -1,5 +1,13 @@
 # Dousheng_Backend
 
+---
+
+[青训营大项目答辩汇报文档](https://rx4174uz0we.feishu.cn/docx/GpXWdrbqvoMH14xt171cpiOdnof)
+
+项目接口在线演示地址：http://123.57.251.188:8888/
+
+---
+
 ### 一、微服务接口划分
 
 ```bash
@@ -32,8 +40,6 @@ message_service:
 ```
 
 划分为五个微服务，其中user_service和video_service为基础功能，interaction_service和relation_service和message_service为自选功能。
-
-
 
 ### 二、项目结构目录
 
@@ -99,10 +105,7 @@ project-root/
 ├─ go.mod
 ├─ go.sum
 └─ README.md                 // 项目说明文档（this）
-
 ```
-
-
 
 ### 三、项目环境部署流程
 
@@ -134,8 +137,9 @@ project-root/
 > ```SQL
 > # do some sqls
 > ```
-![ER-mysql.PNG](docs%2Fimgs%2FER-mysql.PNG)
-mysql ER图
+> 
+> ![ER-mysql.PNG](docs%2Fimgs%2FER-mysql.PNG)
+> mysql ER图
 
 **2. 安装redis**
 
@@ -175,7 +179,6 @@ docker run -p 6379:6379 --name redis --restart always --network app-tier -v /mnt
 
 ![docker-redis.png](docs%2Fimgs%2Fdocker-redis.png)
 
-
 **3. 安装etcd**
 
 ```bash
@@ -212,7 +215,7 @@ upstream ossproxy{
 }
 server {
     listen 22441;
-    
+
     location /nginx_status/ {
         stub_status on;
         access_log off;
@@ -223,7 +226,7 @@ server {
     location /oss-dousheng/ {
         rewrite ^/oss-dousheng(/.*)$ $1 break;
         proxy_pass https://oss-dousheng.oss-cn-beijing-internal.aliyuncs.com;
-        
+
         proxy_redirect off;
         proxy_set_header Host oss-dousheng.oss-cn-beijing-internal.aliyuncs.com; 
         proxy_set_header X-Forwarded-Proto $scheme;
@@ -240,8 +243,6 @@ server {
         proxy_hide_header Content-Disposition;
     }
 }
-
-
 ```
 
 ```bash
@@ -257,8 +258,7 @@ docker run -d --restart=unless-stopped --network app-tier --name oss-proxy -p:22
 > 3. 分别在根目录逐行逐次运行`build_router`和`build_server`中的命令，如果是在windows下部署需要先在cmd中运行`build_prepare_to-linux-amd64.bat`，来实现windows下编译linux的效果
 > 4. 将dist文件夹，config文件夹，dockerfiles文件夹上传至服务器的项目目录中。
 > 5. 运行docker-compose.yml：`docker-compose -f ./dockerfiles/docker-compose.yml up -d`
->    
->    
+> 
 > 6. 其他检查命令：<br>
 >    ```docker network inspect```<br>
 >    ```docker network inspect dousheng_net```<br>
