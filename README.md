@@ -601,12 +601,11 @@ go tool pprof -http=":8085" http://123.57.251.188:8888/dev/pprof/profile
 
 ## 5.1 POSTMAN接口测试演示
 
-[postman接口测试.mp4](docs%2Fvideos%2Fpostman%BD%D3%BF%DA%B2%E2%CA%D4.mp4)
+[postman_api_test.mp4](docs%2Fvideos%2Fpostman_api_test.mp4)
 
 ## 5.2 手机客户端测试
 
-[手机客户端测试.mp4](docs%2Fvideos%2F%CA%D6%BB%FA%BF%CD%BB%A7%B6%CB%B2%E2%CA%D4.mp4)
-
+[android_api_test.mp4](docs%2Fvideos%2Fandroid_api_test.mp4)
 
 
 # 六、项目总结与反思
