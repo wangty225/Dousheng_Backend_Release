@@ -2,13 +2,13 @@
 
 ---
 
-[青训营大项目答辩汇报文档](https://rx4174uz0we.feishu.cn/docx/GpXWdrbqvoMH14xt171cpiOdnof)
+1. [青训营大项目答辩汇报文档](https://rx4174uz0we.feishu.cn/docx/GpXWdrbqvoMH14xt171cpiOdnof)
+2. [快速开始（环境搭建与项目部署）](QuickStart.md)
+3. 项目接口在线演示地址：http://123.57.251.188:8888/
 
-项目接口在线演示地址：http://123.57.251.188:8888/
+4. 演示视频1：# 短视频后台开发测试：[Postman演示视频](https://www.bilibili.com/video/BV13w411U7dY/)
 
-演示视频1：# 短视频后台开发测试：[Postman演示视频](https://www.bilibili.com/video/BV13w411U7dY/)
-
-演示视频2:   # 短视频后台开发测试：[Android演示视频](https://www.bilibili.com/video/BV1yj41117s9/)
+5. 演示视频2:   # 短视频后台开发测试：[Android演示视频](https://www.bilibili.com/video/BV1yj41117s9/)
 
 ---
 

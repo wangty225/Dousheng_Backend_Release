@@ -75,4 +75,5 @@ func Connect() {
 > 调用方式参考文档
 > [Go语言为例,介绍服务端签名直传并设置上传回调_对象存储 OSS-阿里云帮助中心 (aliyun.com)](https://help.aliyun.com/zh/oss/use-cases/go-1?spm=a2c4g.11186623.0.0.44e84211yaAECY)
 
-> 如果不使用oss，可以先使用网上已有的play_url和cover_url。
+> For more to see in `internal/oss/`
+> 
