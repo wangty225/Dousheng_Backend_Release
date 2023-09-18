@@ -3,7 +3,9 @@
 ---
 
 1. [青训营大项目答辩汇报文档](https://rx4174uz0we.feishu.cn/docx/GpXWdrbqvoMH14xt171cpiOdnof)
+
 2. [快速开始（环境搭建与项目部署）](QuickStart.md)
+
 3. 项目接口在线演示地址：http://123.57.251.188:8888/
 
 4. 演示视频1：# 短视频后台开发测试：[Postman演示视频](https://www.bilibili.com/video/BV13w411U7dY/)
@@ -565,9 +567,9 @@ project-root/
     > 
     > user-server（用户相关业务微服务）：❌关闭
     
-    **1.11.1 测试用户信息接口（/douyin/user/info）**
+    **1.11.1 测试用户信息接口（/douyin/user/）**
     
-    | **POST**      | **123.57.251.188:8888/douyin/publish/list/**                                                                                                          |
+    | **POST**      | **123.57.251.188:8888/douyin/user/**                                                                                                                  |
     | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
     | token<br><br> | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6Mjg4MzAxNzQxMCwiZXhwIjoxNjk0MjQyODI4LCJpc3MiOiJkb3VzaGVuZyJ9.Lsi9LCBo7A63ehYZWszCoZ7bAA18ZHjFRtLXfGmiC6M |
     | user_id       | 2883017410                                                                                                                                            |
@@ -607,9 +609,13 @@ go tool pprof -http=":8085" http://123.57.251.188:8888/dev/pprof/profile
 
 [postman_api_test.mp4](docs%2Fvideos%2Fpostman_api_test.mp4)
 
+[postman_api_test.mp4__在线播放_1](https://www.bilibili.com/video/BV13w411U7dY/?vd_source=7c8ec9c1b876283e90058130ff5aa0a6)
+
 ## 5.2 手机客户端测试
 
 [android_api_test.mp4](docs%2Fvideos%2Fandroid_api_test.mp4)
+
+[android_api_test.mp4__在线播放_2](https://www.bilibili.com/video/BV1yj41117s9/)
 
 # 六、项目总结与反思
 
@@ -653,11 +659,13 @@ go tool pprof -http=":8085" http://123.57.251.188:8888/dev/pprof/profile
 > 
 > 4. 将dist文件夹，config文件夹，dockerfiles文件夹上传至服务器的项目目录中。
 > 
-> 5. 运行docker-compose.yml：`docker-compose -f ./dockerfiles/docker-compose.yml up -d`
+> 5. 运行docker-compose.yml：<br>`docker-compose -f ./dockerfiles/docker-compose.yml up -d`
 > 
 > 6. 其他检查命令：<br>
->    ```docker network inspect```<br>
+>    ```docker network inspect xxx```<br>
 >    ```docker network inspect dousheng_net```<br>
+>    
+>    
 >    ```docker network inspect bridge```<br>
 >    ```docker ps -a```<br>
 >    ```docker image ls```<br>
