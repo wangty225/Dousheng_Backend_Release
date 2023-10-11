@@ -14,7 +14,7 @@
 
 6. 获奖证书：
    
-   ![](docs\imgs\prize\awards.png)
+   ![](docs%2Fimgs%2Fprize%2Fawards.png)
 
 ---
 
