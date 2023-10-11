@@ -14,7 +14,7 @@
 
 6. 获奖证书：
    
-   ![](.\docs\imgs\prize\W[��R���%���VY��fN.png)
+   ![](.\docs\imgs\prize\字节青训营获奖证书.png)
 
 ---
 
