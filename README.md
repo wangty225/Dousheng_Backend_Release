@@ -13,8 +13,8 @@
 5. 演示视频2:   # 短视频后台开发测试：[Android演示视频](https://www.bilibili.com/video/BV1yj41117s9/)
 
 6. 获奖证书：
-   
-   ![](docs%2Fimgs%2Fprize%2Fawards.png)
+  
+   <img src="(docs%2Fimgs%2Fprize%2Fawards.png" width="40%">
 
 ---
 
