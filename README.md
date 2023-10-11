@@ -14,7 +14,7 @@
 
 6. 获奖证书：
   
-   <img src="(docs%2Fimgs%2Fprize%2Fawards.png" width="40%">
+   <img src="https://raw.githubusercontent.com/wangty225/Dousheng_Backend_Release/master/docs/imgs/prize/awards.png" width="40%">
 
 ---
 
