@@ -12,6 +12,10 @@
 
 5. 演示视频2:   # 短视频后台开发测试：[Android演示视频](https://www.bilibili.com/video/BV1yj41117s9/)
 
+6. 获奖证书：
+   
+   ![](.\docs\imgs\prize\W[��R���%���VY��fN.png)
+
 ---
 
 # 一、项目介绍
@@ -664,8 +668,7 @@ go tool pprof -http=":8085" http://123.57.251.188:8888/dev/pprof/profile
 > 6. 其他检查命令：<br>
 >    ```docker network inspect xxx```<br>
 >    ```docker network inspect dousheng_net```<br>
->    
->    
+> 
 >    ```docker network inspect bridge```<br>
 >    ```docker ps -a```<br>
 >    ```docker image ls```<br>
